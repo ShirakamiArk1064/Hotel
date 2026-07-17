@@ -11,12 +11,18 @@
 <body>   
 
 <header>
-      <nav class="menu">
-        <a href="#">客室</a>
-        <a href="#">ママパパ応援</a>
-        <a href="#">キャンプ</a>
-        <a href="#">朝食</a>
+
+    <header class="top-header">
+    <div class="mobile-topbar">
+        <button class="menu-toggle" id="menuToggle">&#9776;</button>
+    </div>
+      <nav class="menu" id="mobileMenu">
+        <a href="#hotel-section">客室</a>
+        <a href="#Family">ママパパ応援</a>
+        <a href="#Camp">キャンプ</a>
+        <a href="#Breakfast">朝食</a>
     </nav>
+    
     </header>
 
   
@@ -609,6 +615,26 @@ const breakfastSwiper = new Swiper(".breakfastSwiper2", {
     </div>
 
 </section>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+
+if(menuToggle && mobileMenu){
+    menuToggle.addEventListener("click", function(){
+        mobileMenu.classList.toggle("show");
+    });
+
+    const menuLinks = mobileMenu.querySelectorAll("a");
+    menuLinks.forEach(link => {
+        link.addEventListener("click", function(){
+            if(window.innerWidth <= 768){
+                mobileMenu.classList.remove("show");
+            }
+        });
+    });
+}
+</script>
 
 
 

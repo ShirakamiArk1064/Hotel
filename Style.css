@@ -264,6 +264,8 @@ body{
     transform:translateY(-5px);
 }
 
+”
+
   FAMILY SECTION
 
 
@@ -370,6 +372,7 @@ body{
 .booking-btn:hover{
     background:#b94f14;
     transform:translateY(-5px);
+    
 }
 
 .camp-section{
@@ -635,43 +638,29 @@ body{
 
 }
 
-.info.box   {
-
-    
-
+.info.box{
+    max-width:1000px;
     margin:auto;
-
     padding:45px;
-
     text-align:center;
-
     font-size:26px;
-
     line-height:1.8;
-
     color:#5c4b08;
-
     background:
-
     linear-gradient(#f4e8df 1px, transparent 1px),
-
     linear-gradient(90deg,#f4e8df 1px, transparent 1px);
-
     background-size:25px 25px;
-
     background-color:#fff8f2;
-
     border:8px solid #dfaaa0;
-
     border-radius:35px;
-
-    note{
-        font-size:20px;
-        color:#5c1c08;
-        font-weight:bold;
-    }
 }
 
+.info.box .note{
+    margin-top:16px;
+    font-size:20px;
+    color:#5c1c08;
+    font-weight:bold;
+}
 /* =========================
    COUPON / PLAN SECTION
 ========================= */
@@ -771,4 +760,862 @@ body{
 .coupon-bottom-btn:hover{
     transform:translateY(-5px);
     background:#f3efdf;
+}
+/* =========================
+   TOP HEADER / MENU
+========================= */
+.top-header{
+    width: 100%;
+    position: relative;
+    z-index: 1000;
+}
+
+.mobile-topbar{
+    display: none;
+}
+
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f7eadf;
+    border-top: 2px solid #e0c3a0;
+    border-bottom: 2px solid #e0c3a0;
+}
+
+.menu a{
+    flex: 1;
+    max-width: 260px;
+    text-align: center;
+    text-decoration: none;
+    color: #7b3f00;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 18px 16px;
+    border-right: 1px solid #e5cdb1;
+    transition: 0.3s ease;
+    background: #f7eadf;
+}
+
+.menu a:first-child{
+    border-left: 1px solid #e5cdb1;
+}
+
+.menu a:hover{
+    background: #f5d2a8;
+    color: #5b2600;
+}
+
+@media screen and ( max-width: 480px ) 
+   
+ 
+    {
+      
+    }
+
+    .family-section,
+    .camp-section,
+    .breakfast-section,
+    .coupon-section{
+        padding: left 16px;
+        padding-right: 16px;
+    }
+
+    .mobile-menu-button{
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        padding:12px 16px;
+        background:#f7f0e4;
+
+    }
+
+    .menu-toggle{
+        width:46px;
+        height:46px;
+        border:none;
+        border-radius:12px;
+        background:#d95f16;
+        font-size:24px;
+        cursor:pointer;
+    }
+
+    .hero-inner{
+    grid-template-columns:1fr;
+    gap:12px;
+    padding:0 16px;
+  }
+
+  .hero-left,
+  .hero-right{
+    display:none;
+  }
+
+  .hero-main-img{
+    height:260px;
+  }
+
+  .hero-logo{
+    width:78%;
+    max-width:280px;
+    padding:16px 18px;
+    border-radius:24px;
+    box-shadow:8px 8px 0 #f47c20;
+    border:6px solid #fff8f1;
+    top:55%;
+  }
+  .hero-logo h1{
+    font-size:26px;
+    line-height:1.35;
+    -webkit-text-stroke:1px #fff;
+  }
+ .intro-section{
+    padding:20px 16px 40px;
+  }
+
+  .intro-box{
+    width:100%;
+    border-radius:24px;
+    padding:22px 18px;
+    border-width:5px;
+  }
+
+  .intro-box p{
+    font-size:16px;
+    line-height:1.8;
+  }
+
+  .section-title{
+    margin-bottom:26px;
+  }
+
+  .section-title h2{
+    font-size:24px;
+    line-height:1.5;
+  }
+
+ /* =========================================================
+   MOBILE / TABLET RESPONSIVE
+   Tambahkan di PALING BAWAH Style.css
+========================================================= */
+
+/* =========================
+   TABLET
+========================= */
+@media screen and (max-width: 1024px){
+
+    .wrapper{
+        width: 92%;
+        padding: 30px 0;
+    }
+
+    .title{
+        font-size: 38px;
+        margin-bottom: 45px;
+    }
+
+    .hotel-section{
+        gap: 25px;
+    }
+
+    .image-box{
+        width: 42%;
+    }
+
+    .text-box{
+        width: 58%;
+        min-height: auto;
+        padding: 24px;
+        font-size: 18px;
+    }
+
+    .container{
+        width: 92%;
+        gap: 24px;
+    }
+
+    .card{
+        width: 100%;
+        min-height: 160px;
+        padding: 24px;
+    }
+
+    .card p{
+        font-size: 18px;
+    }
+
+    .booking-btn{
+        width: 280px;
+        height: 90px;
+        font-size: 22px;
+        border-radius: 50px;
+    }
+
+    .family-content{
+        width: 92%;
+        gap: 24px;
+    }
+
+    .familySwiper{
+        width: 38%;
+        height: 260px;
+    }
+
+    .family-info{
+        width: 62%;
+        min-height: auto;
+        padding: 28px;
+    }
+
+    .family-info p{
+        font-size: 20px;
+    }
+
+    .camp-gallery{
+        width: 92%;
+        gap: 20px;
+    }
+
+    .camp-main{
+        width: 68%;
+        height: 380px;
+    }
+
+    .campVerticalSwiper{
+        width: 32%;
+        height: 380px;
+    }
+
+    .campVerticalSwiper .swiper-slide{
+        height: 180px !important;
+    }
+
+    .camp-description{
+        width: 92%;
+        padding: 28px;
+    }
+
+    .camp-description p{
+        font-size: 18px;
+    }
+
+    .price-wrapper{
+        width: 92%;
+        gap: 24px;
+    }
+
+    .price-card{
+        width: 100%;
+    }
+
+    .price-card h3{
+        font-size: 26px;
+    }
+
+    .price-card .booking-btn{
+        width: 260px;
+        height: 86px;
+        font-size: 22px;
+    }
+
+    .breakfast-title h2{
+        font-size: 38px;
+    }
+
+    .breakfastSwiper2{
+        width: 92%;
+        height: 380px;
+    }
+
+    .breakfastSwiper{
+        width: 92%;
+    }
+
+    .breakfastSwiper img{
+        height: 130px;
+    }
+
+    .breakfast-text{
+        width: 92%;
+    }
+
+    .breakfast-text p{
+        font-size: 20px;
+    }
+
+    .review{
+        font-size: 40px;
+    }
+
+    .review h3{
+        font-size: 34px;
+    }
+
+    .review p{
+        font-size: 18px;
+    }
+
+    .info.box{
+        width: 92%;
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .coupon-label h2{
+        min-width: auto;
+        font-size: 26px;
+        padding: 16px 28px;
+    }
+
+    .coupon-text{
+        width: 92%;
+    }
+
+    .coupon-text p{
+        font-size: 22px;
+    }
+
+    .coupon-plan-wrapper{
+        width: 92%;
+        gap: 24px;
+    }
+
+    .coupon-plan-box{
+        width: 100%;
+        font-size: 24px;
+        min-height: 120px;
+    }
+
+    .coupon-bottom-btn{
+        width: 320px;
+        min-height: 100px;
+        font-size: 24px;
+        border-radius: 60px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media screen and (max-width: 768px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /* MENU */
+    .menu{
+        flex-wrap: wrap;
+    }
+
+    .menu a{
+        width: 50%;
+        flex: unset;
+        font-size: 14px;
+        padding: 14px 10px;
+        border: 1px solid #e6caa8;
+    }
+
+    /* HERO */
+    .hotelSwiper{
+        width: 100%;
+        height: 260px;
+    }
+
+    .hero{
+        position: relative;
+    }
+
+    .title-card{
+        width: 78%;
+        max-width: 280px;
+        padding: 18px 16px;
+        border-width: 6px;
+        border-radius: 20px;
+        box-shadow: 6px 6px 0 #f28a2e;
+    }
+
+    .title-card h1{
+        font-size: 24px;
+        line-height: 1.35;
+    }
+
+    /* DESCRIPTION */
+    .description{
+        padding: 20px 16px 40px;
+    }
+
+    .desc-box{
+        width: 100%;
+        max-width: 100%;
+        padding: 20px 16px;
+        border-width: 5px;
+        border-radius: 24px;
+    }
+
+    .desc-box p{
+        font-size: 16px;
+        line-height: 1.8;
+        color: #5d4b13;
+        font-weight: bold;
+    }
+
+    /* WRAPPER */
+    .wrapper{
+        width: 100%;
+        padding: 30px 16px;
+        background: transparent;
+    }
+
+    .title{
+        font-size: 24px;
+        line-height: 1.5;
+        margin-bottom: 28px;
+    }
+
+    /* ROOM SECTION */
+    .hotel-section{
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        margin: 24px 0;
+    }
+
+    .image-box{
+        width: 100%;
+    }
+
+    .image-box img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    .text-box{
+        width: 100%;
+        min-height: auto;
+        padding: 18px 16px;
+        font-size: 15px;
+        line-height: 1.8;
+        border-width: 5px;
+        border-radius: 24px;
+    }
+
+    hr{
+        margin: 26px 0;
+        height: 2px;
+    }
+
+    /* STAY SECTION */
+    .stay-section{
+        padding: 40px 16px;
+    }
+
+    .container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .card{
+        width: 100%;
+        min-height: auto;
+        padding: 20px 16px;
+        border-width: 5px;
+        border-radius: 24px;
+    }
+
+    .card p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .button-group{
+        margin-top: 20px;
+    }
+
+    .booking-btn{
+        width: 100%;
+        max-width: 280px;
+        height: 62px;
+        font-size: 18px;
+        border-radius: 40px;
+    }
+
+    /* FAMILY */
+    .family-section{
+        padding: 50px 16px 60px;
+    }
+
+    .family-title{
+        margin-bottom: 28px;
+    }
+
+    .family-title h2{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .family-content{
+        width: 100%;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .familySwiper{
+        width: 100%;
+        height: 220px;
+    }
+
+    .family-info{
+        width: 100%;
+        min-height: auto;
+        padding: 20px 16px;
+        border-width: 5px;
+        border-radius: 24px;
+    }
+
+    .family-info p{
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .family-button{
+        margin-top: 24px;
+    }
+
+    /* CAMP */
+    .camp-section{
+        padding: 50px 16px 60px;
+    }
+
+    .camp-title{
+        margin-bottom: 28px;
+    }
+
+    .camp-title h2{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .camp-gallery{
+        width: 100%;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .camp-main{
+        width: 100%;
+        height: 240px;
+    }
+
+    .campVerticalSwiper{
+        width: 100%;
+        height: 260px;
+    }
+
+    .campVerticalSwiper .swiper-slide{
+        height: 120px !important;
+    }
+
+    .camp-description{
+        width: 100%;
+        margin: 24px auto;
+        padding: 20px 16px;
+        border-width: 5px;
+        border-radius: 24px;
+    }
+
+    .camp-description p{
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .price-wrapper{
+        width: 100%;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .price-card{
+        width: 100%;
+    }
+
+    .price-info{
+        min-height: auto;
+        padding: 18px 16px;
+        border-width: 5px;
+        border-radius: 24px;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .price-card h3{
+        margin: 18px 0;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    .price-card .booking-btn{
+        width: 100%;
+        max-width: 280px;
+        height: 62px;
+        font-size: 18px;
+        border-radius: 40px;
+    }
+
+    /* BREAKFAST */
+    .breakfast-section{
+        padding: 50px 16px 60px;
+    }
+
+    .breakfast-title{
+        margin-bottom: 28px;
+    }
+
+    .breakfast-title h2{
+        font-size: 24px;
+        line-height: 1.5;
+        padding-bottom: 8px;
+        border-bottom-width: 3px;
+    }
+
+    .breakfastSwiper2{
+        width: 100%;
+        height: 220px;
+    }
+
+    .breakfastSwiper{
+        width: 100%;
+        margin: 14px auto 22px;
+    }
+
+    .breakfastSwiper img{
+        height: 80px;
+    }
+
+    .breakfast-text{
+        width: 100%;
+        margin: 24px auto;
+    }
+
+    .breakfast-text p{
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .review{
+        margin: 28px 0;
+        font-size: 26px;
+    }
+
+    .review h3{
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .review p{
+        font-size: 14px;
+    }
+
+    .info.box{
+        width: 100%;
+        padding: 20px 16px;
+        font-size: 15px;
+        line-height: 1.9;
+        border-width: 5px;
+        border-radius: 24px;
+    }
+
+    .info.box .note{
+        font-size: 13px;
+        margin-top: 12px;
+    }
+
+    /* COUPON */
+    .coupon-section{
+        padding: 40px 16px 50px;
+    }
+
+    .coupon-label{
+        margin-bottom: 24px;
+    }
+
+    .coupon-label h2{
+        min-width: auto;
+        width: 100%;
+        max-width: 280px;
+        min-height: 56px;
+        padding: 12px 18px;
+        font-size: 20px;
+        border-radius: 18px;
+    }
+
+    .coupon-text{
+        width: 100%;
+        margin: 0 auto 24px;
+    }
+
+    .coupon-text p{
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .coupon-plan-wrapper{
+        width: 100%;
+        gap: 16px;
+        margin: 0 auto 28px;
+    }
+
+    .coupon-plan-box{
+        width: 100%;
+        min-height: 78px;
+        font-size: 17px;
+        padding: 16px;
+    }
+
+    .coupon-bottom-btn{
+        width: 100%;
+        max-width: 280px;
+        min-height: 62px;
+        font-size: 18px;
+        border-radius: 40px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media screen and (max-width: 480px){
+
+    .menu a{
+        font-size: 12px;
+        padding: 12px 8px;
+    }
+
+    .hotelSwiper{
+        height: 220px;
+    }
+
+    .title-card{
+        width: 82%;
+        padding: 14px 14px;
+    }
+
+    .title-card h1{
+        font-size: 21px;
+    }
+
+    .title{
+        font-size: 21px;
+    }
+
+    .family-title h2,
+    .camp-title h2,
+    .breakfast-title h2{
+        font-size: 21px;
+    }
+
+    .desc-box p,
+    .text-box,
+    .card p,
+    .family-info p,
+    .camp-description p,
+    .price-info,
+    .breakfast-text p,
+    .info.box{
+        font-size: 14px;
+    }
+
+    .image-box img,
+    .familySwiper,
+    .camp-main,
+    .breakfastSwiper2{
+        height: 200px;
+    }
+
+    .campVerticalSwiper{
+        height: 230px;
+    }
+
+    .campVerticalSwiper .swiper-slide{
+        height: 105px !important;
+    }
+
+    .booking-btn,
+    .price-card .booking-btn,
+    .coupon-bottom-btn{
+        font-size: 16px;
+    }
+
+    .coupon-plan-box{
+        font-size: 15px;
+    }
+}   
+/* MENU MOBILE */
+.top-header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.mobile-topbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: #f7eadf;
+    padding: 10px 16px;
+    border-bottom: 2px solid #e0c3a0;
+}
+
+.menu-toggle{
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    background: #f28a2e;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #c96512;
+}
+
+.menu{
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    background: #f7eadf;
+    border-top: none;
+    border-bottom: 2px solid #e0c3a0;
+}
+
+.menu.show{
+    display: flex;
+}
+
+.menu a{
+    width: 100%;
+    max-width: 100%;
+    border: none;
+    border-top: 1px solid #ead5bf;
+    padding: 14px 16px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.menu-toggle{
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+}
+
+.menu a{
+    font-size: 14px;
+    padding: 12px 14px;
 }
